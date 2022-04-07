@@ -506,4 +506,10 @@ describe("SomeJTDSchemaType", () => {
 
     void [schema]
   })
+
+  it("should accept enums", () => {
+    const schema: SomeJTDSchemaType = {enum: ["a", "b"]} as const
+
+    void [schema]
+  })
 })
